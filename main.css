@@ -1,0 +1,14 @@
+/*Create two checkboxes below the message input field. One labeled "Dark theme" and the other labeled "Large text".
+When the user clicks on the dark theme checkbox, change the background color of your application to a dark gray, and the font color for messages should be white(ish)... you pick.
+If the user unchecks the box, the background color should change back to white with black text for messages.
+*/
+
+body {
+  background-color: white;
+  font-color: black;
+}
+
+.darkTheme {
+  background-color: darkgrey;
+  font-color: oldlace;
+}
