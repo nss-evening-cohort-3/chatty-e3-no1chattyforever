@@ -20,3 +20,15 @@ document.querySelector("body").addEventListener("click", function(event) {
 }
 })();
 
+var input = document.getElementById("userInput");
+//EVENT LISTENER FOR RETURN KEY KEYPRESS IN MESSAGE FIELD
+function keyEvent(currentMessage) {
+  if (event.target.className === "form-control") {
+      console.log("You clicked on a `input` element");
+      input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+      
+      }
+      }
+  }); 
+}   
