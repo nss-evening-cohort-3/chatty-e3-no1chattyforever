@@ -3,4 +3,40 @@
 	margin: 20px 20px;
 	padding: 10px;
 	overflow: auto;
+  background-color: white;
+}
+
+.inputText {
+  text-align: center;
+}
+
+
+.text {
+  width: 60%;
+  height: 40px;
+}
+
+#container {
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #E7E9E5;
+  width: 65%;
+  border: 1px solid #707070;
+  border-radius: 20px;
+}
+
+.options {
+  margin: 10px;
+}
+
+button {
+  height: 40px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.innerDiv {
+  margin: 20px;
 }
