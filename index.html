@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="chatty.css">
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	</head>
-	<body>
+	<body id="main">
 		<div id="container">
 			<div class="innerDiv">
 			<h1 class="logo">Chatty!</h1>
@@ -14,8 +14,8 @@
 					<input type="text" class="text">
 					<button class="btn btn-default">Clear Message Board</button>
 		      <div class="options">
-			      <input type="checkbox"> Dark Theme</input>
-			      <input type="checkbox"> Large Text</input>
+			     <input type="checkbox" id="darkTheme" label="darkTheme">Dark Theme</input>      
+		       <input type="checkbox" id="largeText" label="largeText">Large Text</input>
 		      </div>
 				</div>
 				<h4>Messages:</h4>
@@ -28,6 +28,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="chatty.js"></script>
-		
+    <script type="text/javascript" src="loader.js"></script>
 	</body>
 </html>
