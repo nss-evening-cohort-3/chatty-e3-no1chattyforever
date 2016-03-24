@@ -1,6 +1,5 @@
 "use strict";
 
-var Chatty;
 var darkBox = document.getElementById('darkTheme');
 var bodyTag = document.getElementById('main');
 
@@ -11,3 +10,5 @@ darkBox.addEventListener("click", function() {
       bodyTag.classList.remove('darkTheme');
     }
 });
+
+Chatty.loadChats();
