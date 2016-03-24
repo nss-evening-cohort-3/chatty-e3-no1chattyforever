@@ -1,7 +1,26 @@
 "use strict";
 
-//One IIFE should accept an element id, and the user message, and then add the user's message - along with the delete button - to the specified parent element. Each message should be stored in a private array in this IIFE. This IIFE should expose a function to read all messages, and delete a single message.
+var Chatty = (function(chatty) {
+  // accept user input on return key click
+  let inputEl = document.getElementById('userInput');
+  //return key part
+  inputEl.addEventListener('keypress', function(e) {
 
-var Chatty = (function(anything) {
-  
-})
+    if(e.keyCode == 13) {
+      let chatHistory = Chatty.getChats();
+      let chatObj = {
+        "msg": inputEl.value
+      };
+
+
+      // add input to chats array (make sure it all continues posting to DOM)
+
+
+      chatHistory.push(chatObj); //unshift value of input into chats array
+
+      Chatty.populateDOM(chatHistory);
+    }
+});
+
+  // allow delete of single msg
+}( Chatty || {} ));

@@ -18,5 +18,5 @@ var Chatty = (function(chatty) {
     chatLoader.send(); 
     }
 	}
-  return chatty;
+  
 }( Chatty || {} ));
