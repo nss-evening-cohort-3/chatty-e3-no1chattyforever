@@ -7,19 +7,19 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	</head>
 	<body id="main">
-		<div id="container">
+		<div id="container" class="contain">
 			<div class="innerDiv">
-			<h1 class="logo">Chatty!</h1>
+			<h1 id="logo" class="logo">Chatty!</h1>
 				<div class="inputText">
 					<input type="text" class="text" id="userInput">
 					<button class="btn btn-default">Clear Message Board</button>
 		      <div class="options">
 			     <input type="checkbox" id="darkTheme" label="darkTheme">Dark Theme</input>      
-		       <input type="checkbox" id="largeText" label="largeText">Large Text</input>
+		       <input type="checkbox" id="largeText" label="largeText"><text id="labelLarge">Large Text</text></input>
 		      </div>
 				</div>
-				<h4>Messages:</h4>
-				<div class="messageContainer">
+				<h4 id="header">Messages:</h4>
+				<div class="messageContainer" id="messageContainer">
 					<div id="output"></div>
 				</div>
 			</div>
