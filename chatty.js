@@ -15,7 +15,7 @@ function options() {
   var deletebtn = document.getElementsByClassName("deletebtn");
   var hoverDelete = document.getElementById("hover")
 
-
+//Change body styling to dark theme
 darkBox.addEventListener("click", function() {
   if (darkBox.checked === true) {
     body.classList.add('darkBody');
@@ -42,6 +42,7 @@ darkBox.addEventListener("click", function() {
     }
 });
 
+//Change messages and delete button to dark theme
   for (let i = 0; i < Chatty.getChats().length; i++) { 
     darkBox.addEventListener("click", function() {
       if (darkBox.checked === true) {
@@ -52,9 +53,8 @@ darkBox.addEventListener("click", function() {
           deletebtn[i].classList.remove('darkDelete');
       }
     });
-  }
 
-  for (let i = 0; i < Chatty.getChats().length; i++) { 
+//Change message to large size
     largeBox.addEventListener("click", function() {
       if (largeBox.checked === true) {
         text[i].classList.add('largeText');
@@ -62,18 +62,14 @@ darkBox.addEventListener("click", function() {
           text[i].classList.remove('largeText');
       }
     });
-  }
 
-  
-  for (let i = 0; i < Chatty.getChats().length; i++) {
+//Create hover styling to delete button. NOT WORKING PROPERLY.
     hoverDelete.addEventListener("mouseover", function() {
-      hoverDelete.classList.add("deleteHover")
+      hoverDelete.classList.add("deleteHover");
     });
-  }
 
-  for (let i = 0; i < Chatty.getChats().length; i++) {
     hoverDelete.addEventListener("mouseout", function() {
-      hoverDelete.classList.remove("deleteHover")
+      hoverDelete.classList.remove("deleteHover");
     });
   }
 }
