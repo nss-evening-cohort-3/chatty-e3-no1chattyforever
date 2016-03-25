@@ -6,8 +6,8 @@ var Chatty = (function(chatty) {
     let chatHistory = Chatty.getChats();
     // loop through array to output msgs in DOM
     for (let i = 0; i < chats.length; i++) {
-      outputEl.innerHTML += '<p>' + chats[i].msg + '<button class="delete">' + "Delete" + '</button></p>';
-    console.log("hi");
+      outputEl.innerHTML +=  '<span id="hover" class="deletebtn col-xs-1 glyphicon glyphicon-remove" aria-hidden="true"></span>' + '<p id="message" class="msg col-xs-11">' + chats[i].msg + '</p>';
+      options();
     };
   }
   return chatty;

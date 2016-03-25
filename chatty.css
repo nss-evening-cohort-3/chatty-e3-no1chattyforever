@@ -1,20 +1,76 @@
 body {
-  background-color: #EDEFFE;
+  background-color: #EDF0FF;
   font-color: black;
   margin: 5%;
   padding: 10%;
 }
 
-.darkTheme {
-  background-color: darkgrey;
-  font-color: #EDEFFE;
+.darkBody {
+  background-color: #727272;
+}
+
+.darkContainer {
+  font-color: #DFDFDF;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #727272;
+  width: 600px;
+  border: 1px solid #EDEFFE;
+  border-radius: 20px;
+}
+
+.largeText {
+  font-size: 50px;
+}
+
+.darkMessage {
+  color: white;
+}
+
+.darkMC {
+  border: 1px solid #DFDFDF;
+  margin: 20px 20px;
+  padding: 10px;
+  overflow: auto;
+  background-color: #727272;
+}
+
+.darkLogo {
+  color: white;
+  text-align: center;
+}
+
+.darkDelete {
+  color: white;
+}
+
+.largeDelete {
+  padding-top: 25px;
+  margin-right: -10px;
+}
+
+.deletebtn {
+  padding-top: 2px;
+  margin-right: -10px;
+}
+
+.deleteHover {
+  color: darkgrey;
+}
+
+.darkHeader {
+  color: #F0F0F0;
+}
+
+.msgDiv {
+  display: inline-block;
 }
 
 .messageContainer {
-	border: 1px solid #B2B2B2;
-	margin: 20px 20px;
-	padding: 10px;
-	overflow: auto;
+  border: 1px solid #B2B2B2;
+  margin: 20px 20px;
+  padding: 10px;
+  overflow: auto;
   background-color: white;
 }
 
@@ -25,14 +81,14 @@ body {
 
 .text {
   width: 60%;
-  height: 40px;
+  height: 38px;
 }
 
-#container {
+.contain {
   margin: 0 auto;
   padding-top: 20px;
   background-color: #FFF;
-  width: 65%;
+  width: 600px;
   border: 1px solid #B2B2B2;
   border-radius: 20px;
 }
@@ -51,4 +107,10 @@ button {
 
 .innerDiv {
   margin: 20px;
+}
+
+
+#output {
+  height: 300px;
+  overflow: auto;
 }
