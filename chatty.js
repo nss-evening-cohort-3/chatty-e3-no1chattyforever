@@ -61,13 +61,13 @@ darkBox.addEventListener("click", function() {
           text[i].classList.remove('largeText');
       }
     });
-    //Create hover styling to delete button. NOT WORKING PROPERLY.
-    hoverDelete.addEventListener("mouseover", function() {
-      hoverDelete.classList.add("deleteHover");
-    });
-    hoverDelete.addEventListener("mouseout", function() {
-      hoverDelete.classList.remove("deleteHover");
-    });
+    // //Create hover styling to delete button. NOT WORKING PROPERLY.
+    // hoverDelete.addEventListener("mouseover", function() {
+    //   hoverDelete.classList.add("deleteHover");
+    // });
+    // hoverDelete.addEventListener("mouseout", function() {
+    //   hoverDelete.classList.remove("deleteHover");
+    // });
   }
 }
 

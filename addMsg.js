@@ -11,16 +11,37 @@ var Chatty = (function(chatty) {
       let chatObj = {
         "msg": inputEl.value
       };
+
       // add input to chats array (make sure it all continues posting to DOM)
       chatHistory.push(chatObj); //push value of input into chats array
       Chatty.populateDOM(chatHistory);
+
       //empty input value on keypress
       inputEl.value = "";
     }
 });
 
+
+
+
   // allow delete of single msg
-  var dltBtn = document.getElementsByClassName('delete');
+  // var dltBtn = document.getElementsByClassName('delete');
+
+chatty.setEventListener = function() {
+  var dltBtn = document.getElementsByClassName('deletebtn')
+  console.log("DELETE BTN", dltBtn);
+  for (var i = 0; i < dltBtn.length; i++) {
+    dltBtn[i].addEventListener("click", function (event) {
+      //console.log("event", event.target.id.split("chat")[1]);
+      let chattyIndex = event.target.id.split("chat")[1];
+      let chats = Chatty.getChats();
+      chats.splice(chattyIndex, 1);
+      Chatty.populateDOM(chats);
+      //chats[i] === "";
+    });
+  }
+};
+return chatty;
 
 
 }( Chatty || {} ));

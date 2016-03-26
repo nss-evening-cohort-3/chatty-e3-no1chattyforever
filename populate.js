@@ -9,7 +9,9 @@ var Chatty = (function(chatty) {
     for (let i = 0; i < chats.length; i++) {
       // outputEl.innerHTML += '<p>' + chats[i].msg + '<button class="delete">' + "Delete" + '</button></p>';
 
-      outputEl.innerHTML += '<span id="hover" class="deletebtn col-xs-1 glyphicon glyphicon-remove" aria-hidden="true"></span>' + '<p id="message" class="msg col-xs-11">' + chats[i].msg + '</p>';
+      let elementId = "chat"+i;
+
+      outputEl.innerHTML += '<span id=' + elementId +' class="deletebtn col-xs-1 glyphicon glyphicon-remove" aria-hidden="true"></span>' + '<p id="message" class="msg col-xs-11">' + chats[i].msg + '</p>';
       options();
     };
   }
