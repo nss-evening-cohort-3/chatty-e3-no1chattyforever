@@ -43,23 +43,23 @@ function options() {
     }
 });
 
-//Change messages and delete button to dark theme
+//Change messages and delete button to dark theme **if messages and delete buttons exist on DOM
   for (let i = 0; i < Chatty.getChats().length; i++) { 
     darkBox.addEventListener("click", function() {
-      if (darkBox.checked === true) {
+      if (darkBox.checked === true && messageContainer.innerHTML.indexOf(0) > 0) {
         text[i].classList.add('darkMessage');
         deletebtn[i].classList.add('darkDelete');
-        } else if (darkBox.checked === false) {
+        } else if (darkBox.checked === false && messageContainer.innerHTML.indexOf(0) > 0) {
           text[i].classList.remove('darkMessage');
           deletebtn[i].classList.remove('darkDelete');
       }
     });
 
-    //Change message to large size
+    //Change message to large size **if message exists on DOM
     largeBox.addEventListener("click", function() {
-      if (largeBox.checked === true) {
+      if (largeBox.checked === true && messageContainer.innerHTML.indexOf(0) > 0) {
         text[i].classList.add('largeText');
-        } else if (largeBox.checked === false) {
+        } else if (largeBox.checked === false && messageContainer.innerHTML.indexOf(0) > 0) {
           text[i].classList.remove('largeText');
       }
     });
