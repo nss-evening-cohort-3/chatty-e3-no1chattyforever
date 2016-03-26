@@ -74,5 +74,22 @@ function options() {
   }
 }
 
+//clear button event listeners
+var clearButton = document.getElementById('clearButton');
+clearButton.addEventListener('click', clearBtnFunc);
+clearButton.addEventListener('click', check);
+
+//checks for content in message field
+function check() {
+	if (messageContainer.innerHTML.indexOf(0) < 0) {
+		clearButton.disabled = true;
+	}
+}
+
+//clears messages from DOM
+function clearBtnFunc() {
+	output.innerHTML = "";
+}
+
 
 Chatty.loadChats();

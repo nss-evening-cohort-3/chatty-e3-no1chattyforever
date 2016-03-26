@@ -18,9 +18,16 @@ var Chatty = (function(chatty) {
 
       //empty input value on keypress
       inputEl.value = "";
+
+      //enables clear button use when a message is added after message board has been cleared
+      prepClrBtn();
     }
 });
 
+//envoked after enter keypress line 23
+function prepClrBtn() {
+		clearButton.disabled = false;
+}
 
   // allow delete of single msg
   chatty.setEventListener = function() {
