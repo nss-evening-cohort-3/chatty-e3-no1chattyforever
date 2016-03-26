@@ -17,31 +17,32 @@ function options() {
   var hoverDelete = document.getElementById("hover");
 
   //Change body styling to dark theme
-darkBox.addEventListener("click", function() {
-  if (darkBox.checked === true) {
-    body.classList.add('darkBody');
-    container.classList.remove('contain');
-    container.classList.add('darkContainer');
-    output.classList.remove('messageContainer');
-    output.classList.add('darkMC');
-    logo.classList.remove('logo');
-    logo.classList.add('darkLogo');
-    header.classList.add('darkHeader');
-    // labelDark.classList.add('darkHeader');
-    labelLarge.classList.add('darkHeader');
-    } else if (darkBox.checked === false) {
-      body.classList.remove('darkBody');
-      container.classList.remove('darkContainer');
-      container.classList.add('contain');
-      output.classList.remove('darkMC');
-      output.classList.add('messageContainer');
-      logo.classList.remove('darkLogo');
-      logo.classList.add('logo');
-      header.classList.remove('darkHeader');
-      // labelDark.classList.remove('darkHeader');
-      labelLarge.classList.remove('darkHeader');
+  darkBox.addEventListener("click", function() {
+    if (darkBox.checked === true) {
+      body.classList.add('darkBody');
+      container.classList.remove('contain');
+      container.classList.add('darkContainer');
+      output.classList.remove('messageContainer');
+      output.classList.add('darkMC');
+      logo.classList.remove('logo');
+      logo.classList.add('darkLogo');
+      header.classList.add('darkHeader');
+      // labelDark.classList.add('darkHeader');
+      labelLarge.classList.add('darkHeader');
+      } else if (darkBox.checked === false) {
+        body.classList.remove('darkBody');
+        container.classList.remove('darkContainer');
+        container.classList.add('contain');
+        output.classList.remove('darkMC');
+        output.classList.add('messageContainer');
+        logo.classList.remove('darkLogo');
+        logo.classList.add('logo');
+        header.classList.remove('darkHeader');
+        // labelDark.classList.remove('darkHeader');
+        labelLarge.classList.remove('darkHeader');
     }
 });
+
 //Change messages and delete button to dark theme
   for (let i = 0; i < Chatty.getChats().length; i++) { 
     darkBox.addEventListener("click", function() {
@@ -53,6 +54,7 @@ darkBox.addEventListener("click", function() {
           deletebtn[i].classList.remove('darkDelete');
       }
     });
+
     //Change message to large size
     largeBox.addEventListener("click", function() {
       if (largeBox.checked === true) {
@@ -61,13 +63,14 @@ darkBox.addEventListener("click", function() {
           text[i].classList.remove('largeText');
       }
     });
+
     //Create hover styling to delete button. NOT WORKING PROPERLY.
-    hoverDelete.addEventListener("mouseover", function() {
-      hoverDelete.classList.add("deleteHover");
-    });
-    hoverDelete.addEventListener("mouseout", function() {
-      hoverDelete.classList.remove("deleteHover");
-    });
+    // hoverDelete.addEventListener("mouseover", function() {
+    //   hoverDelete.classList.add("deleteHover");
+    // });
+    // hoverDelete.addEventListener("mouseout", function() {
+    //   hoverDelete.classList.remove("deleteHover");
+    // });
   }
 }
 
