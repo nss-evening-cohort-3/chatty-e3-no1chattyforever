@@ -22,8 +22,6 @@ var Chatty = (function(chatty) {
 });
 
 
-
-
   // allow delete of single msg
   chatty.setEventListener = function() {
     var dltBtn = document.getElementsByClassName('deletebtn')
