@@ -16,7 +16,6 @@ function options() {
   var deletebtn = document.getElementsByClassName("deletebtn");
   var hoverDelete = document.getElementById("hover");
 
-  //Change body styling to dark theme
   darkBox.addEventListener("click", function() {
     if (darkBox.checked === true) {
       body.classList.add('darkBody');
@@ -27,7 +26,6 @@ function options() {
       logo.classList.remove('logo');
       logo.classList.add('darkLogo');
       header.classList.add('darkHeader');
-      // labelDark.classList.add('darkHeader');
       labelLarge.classList.add('darkHeader');
       } else if (darkBox.checked === false) {
         body.classList.remove('darkBody');
@@ -38,7 +36,6 @@ function options() {
         logo.classList.remove('darkLogo');
         logo.classList.add('logo');
         header.classList.remove('darkHeader');
-        // labelDark.classList.remove('darkHeader');
         labelLarge.classList.remove('darkHeader');
     }
 });
@@ -63,14 +60,6 @@ function options() {
           text[i].classList.remove('largeText');
       }
     });
-
-    //Create hover styling to delete button. NOT WORKING PROPERLY.
-    // hoverDelete.addEventListener("mouseover", function() {
-    //   hoverDelete.classList.add("deleteHover");
-    // });
-    // hoverDelete.addEventListener("mouseout", function() {
-    //   hoverDelete.classList.remove("deleteHover");
-    // });
   }
 }
 
